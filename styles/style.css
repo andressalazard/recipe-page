@@ -5,6 +5,7 @@
 :root {
   --font-playfair: "Playfair Display", serif;
   --font-montserrat: "Montserrat", sans-serif;
+  --theme-color: #f2994a;
 }
 
 * {
@@ -103,7 +104,7 @@ body {
 
 .cooking-indication-item__highlighted p,
 .cooking-indication-item__highlighted .material-icons {
-  color: #f2994a;
+  color: var(--theme-color);
 }
 
 .indication-title {
@@ -128,7 +129,7 @@ body {
   display: block;
 }
 
-.ingredients-title {
+.content-title {
   font-family: var(--font-playfair);
   font-weight: 700;
   font-size: 1.5rem;
@@ -164,7 +165,7 @@ body {
 }
 
 .dish-ingredient-item input[type="checkbox"]:checked + label {
-  color: #f2994a;
+  color: var(--theme-color);
 }
 
 .dish-ingredient-item label {
@@ -172,11 +173,52 @@ body {
   font-size: 16px;
 }
 
-.dish-ingredient-item strong {
+.strong-text {
   font-weight: bold;
 }
 
 #ingredient-suggestions {
   font-weight: bold;
   font-style: italic;
+}
+
+.recipe-instructions {
+  display: block;
+  font-family: var(--font-montserrat);
+  margin: 10px 0;
+  color: #333;
+}
+
+.instructions-list {
+  margin-left: 15px;
+}
+
+.instruction-list-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  /* align-items: center; */
+}
+
+.instruction-numeral {
+  margin: 0;
+  margin-right: 10px;
+  background-color: var(--theme-color);
+  color: #fff;
+  border-radius: 10px;
+  max-height: 6vh;
+  width: 3vw;
+}
+
+.instruction-numeral h1 {
+  font-family: var(--font-playfair);
+  font-weight: 700;
+  font-size: 1.25rem;
+  align-items: center;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.instruction-detail {
+  margin: 0;
+  margin-bottom: 20px;
 }
