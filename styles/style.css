@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&family=Playfair+Display:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+* {
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  margin: 60px;
+  display: block;
+}
+
+.recipe-heading {
+  margin: 10px;
+  display: block;
+}
+
+.recipe-title {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.recipe-general-description {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+
+  margin: 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  color: #4f4f4f;
+}
+
+.recipe-general-description p {
+  margin: 0;
+}
+
+.recipe-general-description img {
+  margin-top: 5px;
+}
+
+.recipe-content {
+  margin: 10px;
+  display: block;
+}
+
+.recipe-photo {
+  max-width: 100%;
+  max-height: 50vw;
+  object-fit: cover;
+}
+
+.cooking-setout {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.cooking-indications {
+  display: block;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cooking-indication-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  margin: 40px 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cooking-indication-content {
+  margin: 0;
+}
+
+.indication-icon {
+  margin: auto;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+  color: #4f4f4f;
+}
+
+.cooking-indication-item__highlighted p,
+.cooking-indication-item__highlighted .material-icons {
+  color: #f2994a;
+}
+
+.indication-title {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #bdbdbd;
+  margin-bottom: 4px;
+}
+
+.indication-description {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+}
